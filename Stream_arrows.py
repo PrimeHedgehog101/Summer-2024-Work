@@ -1,26 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-mu_0 = 4*np.pi*10
-mu_d = 2*mu_0
-mu_b = mu_0*2
-eta_1 = 80
-eta_2 = 50
-H_inf = 1
-R_0 = 1
-a = 1
-b = 2
-N = 1000
-############################# Global set-up ################################
-
-x = np.linspace(-4,4,N)
-y = np.linspace(-4,4,N)
-X , Y = np.meshgrid(x,y)
-
-R = np.sqrt(X**2+Y**2)
-
-
-
 def streamQuiver(ax,sp,*args,spacing=None,n=5,**kwargs):
     """ Plot arrows from streamplot data  
     The number of arrows per streamline is controlled either by `spacing` or by `n`.
